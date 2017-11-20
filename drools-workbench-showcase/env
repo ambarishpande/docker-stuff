@@ -1,0 +1,1 @@
+--env WBUSERNAME=dtadmin --env WBPASSWORD=dtadmin --env ROLE=admin

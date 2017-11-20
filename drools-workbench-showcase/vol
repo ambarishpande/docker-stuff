@@ -1,0 +1,1 @@
+-v /home/ambarish/.dt/repository:/opt/jboss/wildfly/bin/repositories/kie/global -v /home/ambarish/.dt/drools-git:/opt/jboss/wildfly/bin/.niogit

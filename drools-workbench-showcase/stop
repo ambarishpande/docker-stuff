@@ -1,0 +1,3 @@
+#!/bin/bash
+docker stop drools-workbench-showcase
+docker rm drools-workbench-showcase
