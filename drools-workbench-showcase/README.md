@@ -1,6 +1,7 @@
 ## Drools Workbench Docker Image
 
-#Steps to use:
+### Steps to use:
+
 1) Build image
 ```
 ./build
@@ -12,13 +13,15 @@
 ./start
 ```
 
-#To Stop and remove:
+### To Stop and remove:
 ```
 ./stop
 ```
 
-#To use shell inside container:
+### To use shell inside container:
 ```
 ./shell
 ```
+
+For more info on cusomization : https://hub.docker.com/r/jboss/drools-workbench-showcase/
 
