@@ -46,7 +46,7 @@ fi
 # Start the jboss docker container
 echo "Starting $CONTAINER_NAME docker container using:"
 echo "** Container name: $CONTAINER_NAME"
-image_drools_workbench=$(docker run -p 8090:8080 -p 8001:8001 -d $(cat vol) $(cat env) --name $CONTAINER_NAME $IMAGE_NAME:$IMAGE_TAG)
+image_drools_workbench=$(docker run -p 8080:8080 -p 8001:8001 -d $(./vol) $(cat env) --name $CONTAINER_NAME $IMAGE_NAME:$IMAGE_TAG)
 ip_drools_workbench=$(docker inspect $image_drools_workbench | grep \"IPAddress\" | awk '{print $2}' | tr -d '",')
 echo $image_drools_workbench > docker.pid
 

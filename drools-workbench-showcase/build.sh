@@ -4,6 +4,11 @@
 # Drools Workbench Showcase - Docker image build script
 # *****************************************************
 
+#Create directories to mount volumes
+mkdir -p volumes/maven
+mkdir -p volumes/git
+
+
 IMAGE_NAME="jboss/drools-workbench-showcase"
 IMAGE_TAG="ambarish"
 

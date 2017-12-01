@@ -28,7 +28,7 @@ under the License.
       KIE_MAVEN_REPO_PASSWORD - Defaults to admin
 -->
 <settings>
-  <localRepository>${env.HOME}/.m2/repository</localRepository>
+  <localRepository>/opt/jboss/.m2/repository</localRepository>
   <servers>  
 	<server>
 		<id>guvnor-m2-repo</id>

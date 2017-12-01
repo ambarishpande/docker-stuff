@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+WHO=/opt/jboss/wildfly/bin/repositories/kie/global
+
+stat $WHO > /dev/null || (echo You must mount a file to "$WHO" in order to properly assume user && exit 1)
+
+USERID=$(stat -c %u $WHO)
+GROUPID=$(stat -c %g $WHO)
+
+groupmod -g $GROUPID jboss
+usermod -u $USERID jboss
+chown -R jboss:jboss /root/.m2
+gosu jboss "$@"
+
