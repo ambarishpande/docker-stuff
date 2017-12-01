@@ -7,7 +7,10 @@
 ./build
 ```
 
-2) Modify vol and env files according to your system.
+2)Use Default / Modify vol and env files to change volume mounting path.
+
+NOTE : The directories to be mounted as volumes must be created before starting container.
+
 3) Start the docker container.
 ```
 ./start
