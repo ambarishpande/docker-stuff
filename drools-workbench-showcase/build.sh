@@ -10,7 +10,7 @@ mkdir -p volumes/git
 
 
 IMAGE_NAME="jboss/drools-workbench-showcase"
-IMAGE_TAG="ambarish"
+IMAGE_TAG="v1.4.0-SNAPSHOT"
 
 # Build the container image.
 echo "Building the Docker container for $IMAGE_NAME:$IMAGE_TAG.."
