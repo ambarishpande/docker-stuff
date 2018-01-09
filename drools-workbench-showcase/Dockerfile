@@ -23,6 +23,7 @@ ADD etc/standalone-full-drools.xml $JBOSS_HOME/standalone/configuration/standalo
 ADD etc/application-users.properties $JBOSS_HOME/standalone/configuration/application-users.properties
 ADD etc/application-roles.properties $JBOSS_HOME/standalone/configuration/application-roles.properties
 ADD etc/settings.xml $JBOSS_HOME/../.m2/settings.xml
+ADD etc/ErraiService.properties $JBOSS_HOME/standalone/deployments/drools-wb.war/WEB-INF/classes/ErraiService.properties
 ADD map-uid-gid $JBOSS_HOME/bin/
 ADD etc/start_drools-wb.sh $JBOSS_HOME/bin
 
@@ -35,6 +36,7 @@ RUN chown jboss:jboss $JBOSS_HOME/standalone/configuration/standalone-full-drool
 chown jboss:jboss $JBOSS_HOME/standalone/configuration/application-users.properties && \
 chown jboss:jboss $JBOSS_HOME/standalone/configuration/application-roles.properties && \
 chown jboss:jboss $JBOSS_HOME/../.m2/settings.xml && \
+chown jboss:jboss $JBOSS_HOME/standalone/deployments/drools-wb.war/WEB-INF/classes/ErraiService.properties && \
 chown jboss:jboss $JBOSS_HOME/bin/start_drools-wb.sh && \
 chown jboss:jboss $JBOSS_HOME/bin/map-uid-gid 
 
